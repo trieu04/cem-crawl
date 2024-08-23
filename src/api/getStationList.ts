@@ -28,7 +28,6 @@ async function getStationList() {
             lon: element.getAttribute('data-lon') as string,
             province: element.getAttribute('data-province') as string,
             address: element.getAttribute('data-address') as string,
-            _attributes: element.attributes 
         }
     })
 
