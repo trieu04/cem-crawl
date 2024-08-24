@@ -1,13 +1,14 @@
 {
   "scripts": {
-    "crawl:air24h": "ts-node src/command/crawlAir24h.ts",
-    "crawl:air30d": "ts-node src/command/crawlAir30d.ts",
+    "crawl:air-hourly": "ts-node src/command/crawlAirHourly.ts",
+    "crawl:air-daily": "ts-node src/command/crawlAirDaily.ts",
     "crawl:station": "ts-node src/command/crawlStationList.ts"
   },
   "dependencies": {
     "axios": "^1.7.4",
     "axios-retry": "^4.5.0",
     "command-line-args": "^6.0.0",
+    "command-line-usage": "^7.0.3",
     "csv-stringify": "^6.5.1",
     "date-fns": "^3.6.0",
     "node-cron": "^3.0.3",
@@ -17,6 +18,8 @@
     "winston": "^3.14.2"
   },
   "devDependencies": {
+    "@types/command-line-args": "^5.2.3",
+    "@types/command-line-usage": "^5.0.4",
     "@types/node-cron": "^3.0.11"
   }
 }
